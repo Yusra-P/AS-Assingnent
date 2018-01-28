@@ -1,0 +1,31 @@
+Module Module1
+
+    Sub Main()
+
+        Dim Name As String
+        Dim ID As Integer
+
+        Name = ""
+        ID = 0
+
+        FileOpen(1, "C:\Computer File Practice\FilePractice1\newMember.txt", OpenMode.Input)
+
+        While EOF(1) = False
+
+            Input(1, Name)
+            Input(1, ID)
+
+            Console.WriteLine(Name)
+            Console.WriteLine(ID)
+
+        End While
+
+        FileClose(1)
+
+        Console.ReadKey()
+
+
+
+    End Sub
+
+End Module
