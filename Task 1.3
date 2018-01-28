@@ -1,0 +1,43 @@
+Module Module1
+
+    Sub Main()
+
+        Dim Name As String
+        Dim ID As Integer
+        Dim Something As Integer
+        Dim searchName As String
+
+        Name = ""
+        ID = 0
+        searchName = ""
+        Something = 0
+
+        FileOpen(1, "C:\Computer File Practice\FilePractice1\newMember.txt", OpenMode.Input)
+
+        Console.WriteLine("Enter Name whos roll number you want to search for")
+        searchName = Console.ReadLine
+
+        While something <> 1
+
+            Input(1, Name)
+            Input(1, ID)
+
+            If Name.ToLower = searchName.ToLower Then
+                Something = 1
+            End If
+
+        End While
+
+        If Something = 1 Then
+            Console.WriteLine(ID)
+        Else
+            Console.WriteLine("Name is invalid")
+        End If
+
+        FileClose(1)
+
+        Console.ReadKey()
+
+    End Sub
+
+End Module
