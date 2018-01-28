@@ -1,0 +1,35 @@
+Module Module1
+
+    Sub Main()
+
+        Dim Name As String
+        Dim ID As Integer
+        Dim Search As String
+
+        Name = ""
+        Search = "yes"
+        ID = 0
+
+        FileOpen(1, "C:\Computer File Practice\FilePractice1\newMember.txt", OpenMode.Output)
+
+        While Search = "yes"
+            Console.WriteLine("Enter Member Name")
+            Name = Console.ReadLine
+
+            Console.WriteLine("Enter Member ID")
+            ID = Console.ReadLine
+
+            Console.WriteLine("Do you want to enter more names? (yes/no)")
+            Search = Console.ReadLine
+
+            WriteLine(1, Name)
+            WriteLine(1, ID)
+
+        End While
+
+        FileClose()
+
+
+    End Sub
+
+End Module
