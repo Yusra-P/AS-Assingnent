@@ -1,0 +1,66 @@
+Module Module1
+
+    Sub main()
+        Dim a, d, f As String
+        Dim b, c, e As Integer
+        Dim a2, d2, f2 As String
+        Dim b2, c2, e2 As Integer
+
+        a = ""
+        d = ""
+        f = ""
+        a2 = ""
+        d2 = ""
+        f2 = ""
+        b = 0
+        c = 0
+        e = 0
+        b2 = 0
+        c2 = 0
+        e2 = 0
+
+        Console.Write("enter a string: ")
+        a = Console.ReadLine
+
+        Console.Write("enter another string: ")
+        a2 = Console.ReadLine
+
+        b = Len(a)
+        b2 = Len(a2)
+
+        If b Mod 2 = 0 Then
+            b = Len(a)
+            c = (Len(a) / 2)
+            e = (Len(a) / 2)
+            d = Left(a, c)
+            f = Right(a, e)
+        Else
+            c = (b / 2)
+            c = c + 1
+            e = (b / 2)
+            d = Left(a, c)
+            f = Right(a, e)
+        End If
+
+        If b2 Mod 2 = 0 Then
+            b2 = Len(a2)
+            c2 = (Len(a2) / 2)
+            e2 = (Len(a2) / 2)
+            d2 = Left(a2, c2)
+            f2 = Right(a2, e2)
+        Else
+            c2 = (b2 / 2)
+            c2 = c2 + 1
+            e2 = (b2 / 2)
+            d2 = Left(a2, c)
+            f2 = Right(a2, e)
+        End If
+
+        Console.WriteLine(d & d2 & f & f2)
+
+        Console.ReadKey()
+
+
+    End Sub
+
+End Module
