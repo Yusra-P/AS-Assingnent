@@ -1,0 +1,29 @@
+Module Module1
+
+    Sub Main()
+        Dim a, b, c As String
+        Dim count As Integer
+        a = ""
+        b = ""
+        c = ""
+        count = 0
+
+        Console.Write("enter a string: ")
+        a = Console.ReadLine
+
+        b = Left(a, 1)
+        c = c + b
+
+        For count = 1 To Len(a) - 1
+            If a(count) = b Then
+                c = c + "*"
+            Else
+                c = c + a(count)
+            End If
+        Next
+
+        Console.WriteLine(c)
+        Console.ReadKey()
+    End Sub
+
+End Module
