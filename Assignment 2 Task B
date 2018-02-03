@@ -1,0 +1,29 @@
+Module Module1
+
+    Sub Main()
+        Dim s As String
+        Dim n As String
+        Dim m As String
+        s = ""
+        n = ""
+        m = ""
+
+        Console.Write("write a string: ")
+        s = Console.ReadLine
+
+        If Len(s) > 2 Then
+
+            n = Left(s, 2)
+            m = Right(s, 2)
+
+            Console.Write(n & m)
+
+        Else
+            Console.Write("")
+        End If
+
+        Console.ReadKey()
+
+    End Sub
+
+End Module
