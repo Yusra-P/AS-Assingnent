@@ -1,0 +1,42 @@
+Module Module1
+
+    Sub main()
+        Dim a As String
+        Dim b As String
+        Dim c As String
+        Dim d As String
+        Dim e As Integer
+        Dim f As Integer
+        Dim g As String
+        Dim h As String
+
+        a = ""
+        b = ""
+        c = ""
+        d = ""
+        e = 0
+        f = 0
+        g = ""
+        h = ""
+
+        Console.Write("Enter string A: ")
+        a = Console.ReadLine
+
+        Console.Write("enter string B: ")
+        b = Console.ReadLine
+
+        c = Left(a, 2)
+        d = Left(b, 2)
+
+        e = Len(a)
+        f = Len(b)
+
+        g = Mid(a, 3, (e - 2))
+        h = Mid(b, 3, (f - 2))
+
+        Console.Write(d & g & " " & c & h)
+        Console.ReadKey()
+
+    End Sub
+
+End Module
